@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    tools:context=".AddPr">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ajouter un employe"
+                android:id="@+id/loginText"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#c264ff"/>
+
+            <EditText
+                android:id="@+id/nom"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+
+                android:layout_marginTop="10dp"
+                android:drawablePadding="4dp"
+                android:hint="nom"
+                android:padding="2dp"
+                android:textColor="#c264ff"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/prenom"
+                android:drawablePadding="4dp"
+                android:hint="Prenom"
+                android:padding="2dp"
+                android:textColor="#c264ff"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="10dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/date"
+
+                android:drawablePadding="4dp"
+                android:hint="Date"
+                android:padding="2dp"
+                android:textColor="#c264ff"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:text="Choisir specialite:"
+                android:layout_marginBottom="8dp"
+                android:textSize="18sp"
+                android:textColor="#c264ff"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="10dp"/>
+
+            <Spinner
+                android:id="@+id/spe"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:drawablePadding="8dp"
+                android:padding="2dp"
+                android:textColor="#c264ff"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="24sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:text="Choisir chef:"
+                android:layout_marginBottom="8dp"
+                android:textSize="18sp"
+                android:textColor="#c264ff"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="10dp"/>
+            <Spinner
+                android:id="@+id/pers"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:drawablePadding="8dp"
+                android:padding="2dp"
+                android:textColor="#c264ff"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="24sp"
+                />
+
+
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/add"
+                android:text="Add"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#c264ff"
+                app:cornerRadius = "20dp"/>
+        </LinearLayout>
+
+</LinearLayout>
